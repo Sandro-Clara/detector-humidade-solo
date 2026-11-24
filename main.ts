@@ -1,11 +1,11 @@
 /**
  * =========================================================================
  * 
- * PROJETO: Monitoramento de Umidade do Solo em Volts + Filtro Anti-Ruído
+ * PROJETO 3.0 : Monitoramento de Umidade do Solo em Volts  (limite 3,3v)  
  * 
  * INSTITUIÇÃO: EEB Marechal Luz - Jaguaruna / SC (Laboratório Maker)
  * 
- * RESPONSÁVEL: Prof. Sandro José Clara - Especialista em Informática
+ * RESPONSÁVEL: Prof. Sandro J. Clara - Especialista em Informática
  * 
  * =========================================================================
  */
@@ -43,7 +43,7 @@ let tensaoVolts = 0
 let mediaADC = 0
 let somaADC = 0
 let limiteSecoVolts = 1.29
-// Ajustado de 3.31 para 2.85V para que o alerta de excesso realmente dispare
+// Ajustado de 3.31 para 3.19V para que o alerta de excesso realmente dispare
 let limiteExcessoVolts = 3.19
 let ultimoLogExcel = -10000
 music.setVolume(255)
