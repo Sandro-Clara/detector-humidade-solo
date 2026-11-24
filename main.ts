@@ -75,7 +75,7 @@ basic.forever(function () {
         basic.showIcon(IconNames.Umbrella)
         serial.writeLine("====================================================================")
         serial.writeLine("  [!!! ALERTA: FALTA DE AGUA !!!] -> SOLO SECO (" + tensaoVolts + "V < " + limiteSecoVolts + "V)")
-        serial.writeLine("  PROJETO MAKER IoT | EEB Marechal Luz | Prof. Sandro Jose Clara")
+        serial.writeLine("  PROJETO MAKER IoT | EEB Marechal Luz | Prof. Sandro J. Clara")
         serial.writeLine("====================================================================")
         for (let index = 0; index < 4; index++) {
             music.playTone(988, 100)
@@ -88,7 +88,7 @@ basic.forever(function () {
         basic.showIcon(IconNames.Sad)
         serial.writeLine("====================================================================")
         serial.writeLine("  [*** ALERTA: EXCESSO DE AGUA ***] -> ENCHARCADO (" + tensaoVolts + "V > " + limiteExcessoVolts + "V)")
-        serial.writeLine("  PROJETO MAKER IoT | EEB Marechal Luz | Prof. Sandro Jose Clara")
+        serial.writeLine("  PROJETO MAKER IoT | EEB Marechal Luz | Prof. Sandro J. Clara")
         serial.writeLine("====================================================================")
         music.playTone(330, 250)
         basic.pause(100)
@@ -96,7 +96,7 @@ basic.forever(function () {
     } else {
         statusTexto = "UMIDADE IDEAL"
         basic.showIcon(IconNames.Happy)
-        serial.writeLine("PROJETO MAKER IoT | EEB Marechal Luz - Jaguaruna/SC | Prof. Sandro Jose Clara")
+        serial.writeLine("PROJETO MAKER IoT | EEB Marechal Luz - Jaguaruna/SC | Prof. Sandro J. Clara")
         serial.writeLine("STATUS: UMIDADE IDEAL (" + tensaoVolts + "V) | Tempo: " + tempoDecorrido + "s")
     }
 
@@ -105,7 +105,7 @@ basic.forever(function () {
         ultimoLogExcel = agora
         datalogger.log(
             datalogger.createCV("Projeto", "EEB Marechal Luz"),
-            datalogger.createCV("Orientador", "Prof. Sandro Jose Clara"),
+            datalogger.createCV("Orientador", "Prof. Sandro J. Clara"),
             datalogger.createCV("Tensao_V", tensaoVolts),
             datalogger.createCV("Min_V", limiteSecoVolts),
             datalogger.createCV("Max_V", limiteExcessoVolts),
